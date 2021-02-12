@@ -50,7 +50,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tool\Tool.csproj">
+    <ProjectReference Include="..\Wuyu.Tool\Wuyu.Tool.csproj">
       <Project>{9ee0730b-3e65-40a8-b831-91ee59367acf}</Project>
       <Name>Tool</Name>
     </ProjectReference>
