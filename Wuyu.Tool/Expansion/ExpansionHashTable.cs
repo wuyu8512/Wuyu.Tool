@@ -15,14 +15,7 @@ namespace Wuyu.Tool.Expansion
 
 		public static void Write(this Hashtable hashtable, object key, object value)
 		{
-			if (hashtable.Contains(key))
-			{
-				hashtable[key] = value;
-			}
-			else
-			{
-				hashtable.Add(key, value);
-			}
+			hashtable[key] = value;
 		}
 	}
 }

@@ -52,7 +52,7 @@ namespace Wuyu.Tool.Common
 		}
 
 
-		public static DateTime TimeStampToDate(long timeStamp)
+		public static DateTime TimeStampToDate(this long timeStamp)
 		{
 			DateTime dtStart = (new DateTime(1970, 1, 1)).ToLocalTime();
 			long lTime = (timeStamp * 10000000);

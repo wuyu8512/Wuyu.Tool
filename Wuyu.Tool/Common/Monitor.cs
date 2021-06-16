@@ -45,14 +45,14 @@ namespace Wuyu.Tool.Common
 			};
 			task = new Task(async delegate
 			{
-				int i = TimeInterval;
+				var i = TimeInterval;
 				while (true)
 				{
 					if (i == TimeInterval)
 					{
 						try
 						{
-							Handle();
+							await Handle();
 						}
 						catch (Exception e)
 						{
@@ -92,7 +92,7 @@ namespace Wuyu.Tool.Common
 			CloseEvent?.Invoke();
 		}
 
-		protected virtual void Handle()
+		protected virtual async Task Handle()
 		{
 			LogHelp.WriteLine($"正在对{flag}监控");
 		}
